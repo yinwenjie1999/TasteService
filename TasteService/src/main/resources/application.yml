@@ -1,0 +1,32 @@
+#jpa
+spring:
+  jpa: 
+    show-sql: true
+    generate-ddl: false
+    database: MYSQL
+    hibernate: 
+      ddl-auto: update
+    properties:
+      hibernate: 
+        dialect: org.hibernate.dialect.MySQL5Dialect
+    
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    url: jdbc:mysql://localhost:3306/taste?characterEncoding=UTF-8
+    username:  root
+    password: 123456
+    driverClassName: com.mysql.jdbc.Driver
+
+  # freemarker
+  freemarker: 
+    request-context-attribute: request
+    allow-request-override: false
+    cache: false
+    charset: UTF-8
+    expose-request-attributes: true
+    expose-session-attributes: true
+    suffix: .ftl
+    
+# 短信平台的appkey
+shortMessage: 
+  appkey: fb401177ba007b67

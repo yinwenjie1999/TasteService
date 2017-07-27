@@ -1,0 +1,125 @@
+2017-06-23 10:40:23 [main] INFO  com.firstTaste.crm.ServerStarter  - Starting ServerStarter on drjr-ThinkPad-T520 with PID 25758 (/usr/workspace/firstTasteWorkspace/TasteService/bin started by drjr in /usr/workspace/firstTasteWorkspace/TasteService)
+2017-06-23 10:40:23 [main] INFO  com.firstTaste.crm.ServerStarter  - No active profile set, falling back to default profiles: default
+2017-06-23 10:40:23 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext  - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@177bea38: startup date [Fri Jun 23 10:40:23 CST 2017]; root of context hierarchy
+2017-06-23 10:40:24 [background-preinit] INFO  o.h.validator.internal.util.Version  - HV000001: Hibernate Validator 5.3.4.Final
+2017-06-23 10:40:25 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$641514e0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-06-23 10:40:26 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer  - Tomcat initialized with port(s): 8080 (http)
+2017-06-23 10:40:26 [main] INFO  o.a.catalina.core.StandardService  - Starting service Tomcat
+2017-06-23 10:40:26 [main] INFO  o.a.catalina.core.StandardEngine  - Starting Servlet Engine: Apache Tomcat/8.5.11
+2017-06-23 10:40:26 [localhost-startStop-1] INFO  org.apache.jasper.servlet.TldScanner  - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2017-06-23 10:40:26 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]  - Initializing Spring embedded WebApplicationContext
+2017-06-23 10:40:26 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader  - Root WebApplicationContext: initialization completed in 2632 ms
+2017-06-23 10:40:26 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean  - Mapping servlet: 'dispatcherServlet' to [/]
+2017-06-23 10:40:26 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean  - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-06-23 10:40:26 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean  - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-06-23 10:40:26 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean  - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-06-23 10:40:26 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean  - Mapping filter: 'requestContextFilter' to: [/*]
+2017-06-23 10:40:27 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean  - Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-06-23 10:40:27 [main] INFO  o.h.jpa.internal.util.LogHelper  - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-06-23 10:40:27 [main] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {5.0.12.Final}
+2017-06-23 10:40:27 [main] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2017-06-23 10:40:27 [main] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2017-06-23 10:40:27 [main] INFO  o.h.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-06-23 10:40:27 [main] INFO  c.alibaba.druid.pool.DruidDataSource  - {dataSource-1} inited
+2017-06-23 10:40:28 [main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-06-23 10:40:28 [main] INFO  o.h.tool.hbm2ddl.SchemaUpdate  - HHH000228: Running hbm2ddl schema update
+2017-06-23 10:40:29 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean  - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-06-23 10:40:29 [main] INFO  o.h.h.i.QueryTranslatorFactoryInitiator  - HHH000397: Using ASTQueryTranslatorFactory
+2017-06-23 10:40:30 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter  - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@177bea38: startup date [Fri Jun 23 10:40:23 CST 2017]; root of context hierarchy
+2017-06-23 10:40:30 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  - Mapped "{[/customers],methods=[GET]}" onto public java.lang.String com.firstTaste.crm.controller.CustomerHttpController.pageView()
+2017-06-23 10:40:30 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  - Mapped "{[/index],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.firstTaste.crm.controller.IndexController.createCustomerInfo()
+2017-06-23 10:40:30 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  - Mapped "{[/orderinfos/findByConditions],methods=[GET]}" onto public void com.firstTaste.crm.controller.OrderInfoHttpController.findByConditions(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpServletResponse)
+2017-06-23 10:40:30 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  - Mapped "{[/orderinfos],methods=[GET]}" onto public java.lang.String com.firstTaste.crm.controller.OrderInfoHttpController.pageView()
+2017-06-23 10:40:30 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  - Mapped "{[/v1/customers],methods=[GET]}" onto public java.util.List<com.firstTaste.crm.entity.CustomerInfoEntity> com.firstTaste.crm.controller.restful.CustomerInfoController.findCustomerInfos()
+2017-06-23 10:40:30 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  - Mapped "{[/v1/customers],methods=[POST]}" onto public com.firstTaste.crm.entity.CustomerInfoEntity com.firstTaste.crm.controller.restful.CustomerInfoController.createCustomerInfo(com.firstTaste.crm.entity.CustomerInfoEntity)
+2017-06-23 10:40:30 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  - Mapped "{[/v1/customers/getOne/{customerId}],methods=[GET]}" onto public com.firstTaste.crm.entity.CustomerInfoEntity com.firstTaste.crm.controller.restful.CustomerInfoController.findCustomerInfo(java.lang.String)
+2017-06-23 10:40:30 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  - Mapped "{[/v1/customers/conditions],methods=[GET]}" onto public java.util.List<com.firstTaste.crm.entity.CustomerInfoEntity> com.firstTaste.crm.controller.restful.CustomerInfoController.findCustomerInfo(java.lang.String,java.lang.String,java.lang.String)
+2017-06-23 10:40:30 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  - Mapped "{[/v1/orderinfos],methods=[POST]}" onto public com.firstTaste.crm.entity.OrderInfoEntity com.firstTaste.crm.controller.restful.OrderInfoController.createCustomerInfo(com.firstTaste.crm.entity.OrderInfoEntity)
+2017-06-23 10:40:30 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  - Mapped "{[/v1/orderinfos/{customerId}],methods=[GET]}" onto public java.util.List<com.firstTaste.crm.entity.OrderInfoEntity> com.firstTaste.crm.controller.restful.OrderInfoController.findByCustomerId(java.lang.String)
+2017-06-23 10:40:30 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  - Mapped "{[/v1/workinfos/{orderInfoId}],methods=[POST]}" onto public com.firstTaste.crm.entity.WorkInfoEntity com.firstTaste.crm.controller.restful.WorkInfoController.createByOrderInfo(java.lang.String)
+2017-06-23 10:40:30 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  - Mapped "{[/v1/workinfos/done/{workInfoId}],methods=[POST]}" onto public com.firstTaste.crm.entity.WorkInfoEntity com.firstTaste.crm.controller.restful.WorkInfoController.doneWorkInfo(java.lang.String)
+2017-06-23 10:40:30 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  - Mapped "{[/v1/workinfos/findByDeliveryTime/{deliveryTime}],methods=[GET]}" onto public java.util.List<com.firstTaste.crm.entity.WorkInfoEntity> com.firstTaste.crm.controller.restful.WorkInfoController.findByDeliveryTime(java.lang.String) throws java.text.ParseException
+2017-06-23 10:40:30 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  - Mapped "{[/v1/workinfos/getone/{workInfoId}],methods=[GET]}" onto public com.firstTaste.crm.entity.WorkInfoEntity com.firstTaste.crm.controller.restful.WorkInfoController.findById(java.lang.String)
+2017-06-23 10:40:30 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  - Mapped "{[/v1/workinfos/{orderInfoId}],methods=[GET]}" onto public java.util.List<com.firstTaste.crm.entity.WorkInfoEntity> com.firstTaste.crm.controller.restful.WorkInfoController.findByOrderId(java.lang.String)
+2017-06-23 10:40:30 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-06-23 10:40:30 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-06-23 10:40:30 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping  - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-06-23 10:40:30 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping  - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-06-23 10:40:30 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping  - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-06-23 10:40:31 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter  - Registering beans for JMX exposure on startup
+2017-06-23 10:40:31 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter  - Bean with name 'dataSource' has been autodetected for JMX exposure
+2017-06-23 10:40:31 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter  - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2017-06-23 10:40:31 [main] INFO  o.a.coyote.http11.Http11NioProtocol  - Initializing ProtocolHandler ["http-nio-8080"]
+2017-06-23 10:40:31 [main] INFO  o.a.coyote.http11.Http11NioProtocol  - Starting ProtocolHandler [http-nio-8080]
+2017-06-23 10:40:31 [main] INFO  o.a.tomcat.util.net.NioSelectorPool  - Using a shared selector for servlet write/read
+2017-06-23 10:40:31 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer  - Tomcat started on port(s): 8080 (http)
+2017-06-23 10:40:31 [main] INFO  com.firstTaste.crm.ServerStarter  - Started ServerStarter in 8.327 seconds (JVM running for 9.195)
+2017-06-23 10:40:37 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]  - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-06-23 10:40:37 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet  - FrameworkServlet 'dispatcherServlet': initialization started
+2017-06-23 10:40:37 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet  - FrameworkServlet 'dispatcherServlet': initialization completed in 31 ms
+2017-06-23 11:59:16 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin  - Application shutdown requested.
+2017-06-23 11:59:16 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext  - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@177bea38: startup date [Fri Jun 23 10:40:23 CST 2017]; root of context hierarchy
+2017-06-23 11:59:16 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.j.e.a.AnnotationMBeanExporter  - Unregistering JMX-exposed beans on shutdown
+2017-06-23 11:59:16 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.j.e.a.AnnotationMBeanExporter  - Unregistering JMX-exposed beans
+2017-06-23 11:59:16 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean  - Closing JPA EntityManagerFactory for persistence unit 'default'
+2017-06-23 11:59:16 [RMI TCP Connection(2)-127.0.0.1] INFO  c.alibaba.druid.pool.DruidDataSource  - {dataSource-1} closed
+2017-06-23 11:59:25 [main] INFO  com.firstTaste.crm.ServerStarter  - Starting ServerStarter on drjr-ThinkPad-T520 with PID 27630 (/usr/workspace/firstTasteWorkspace/TasteService/bin started by drjr in /usr/workspace/firstTasteWorkspace/TasteService)
+2017-06-23 11:59:25 [main] INFO  com.firstTaste.crm.ServerStarter  - No active profile set, falling back to default profiles: default
+2017-06-23 11:59:25 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext  - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@177bea38: startup date [Fri Jun 23 11:59:25 CST 2017]; root of context hierarchy
+2017-06-23 11:59:26 [background-preinit] INFO  o.h.validator.internal.util.Version  - HV000001: Hibernate Validator 5.3.4.Final
+2017-06-23 11:59:27 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$a5c42342] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-06-23 11:59:28 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer  - Tomcat initialized with port(s): 8080 (http)
+2017-06-23 11:59:28 [main] INFO  o.a.catalina.core.StandardService  - Starting service Tomcat
+2017-06-23 11:59:28 [main] INFO  o.a.catalina.core.StandardEngine  - Starting Servlet Engine: Apache Tomcat/8.5.11
+2017-06-23 11:59:28 [localhost-startStop-1] INFO  org.apache.jasper.servlet.TldScanner  - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2017-06-23 11:59:28 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]  - Initializing Spring embedded WebApplicationContext
+2017-06-23 11:59:28 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader  - Root WebApplicationContext: initialization completed in 3196 ms
+2017-06-23 11:59:29 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean  - Mapping servlet: 'dispatcherServlet' to [/]
+2017-06-23 11:59:29 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean  - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-06-23 11:59:29 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean  - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-06-23 11:59:29 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean  - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-06-23 11:59:29 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean  - Mapping filter: 'requestContextFilter' to: [/*]
+2017-06-23 11:59:29 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean  - Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-06-23 11:59:29 [main] INFO  o.h.jpa.internal.util.LogHelper  - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-06-23 11:59:29 [main] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {5.0.12.Final}
+2017-06-23 11:59:29 [main] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2017-06-23 11:59:29 [main] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2017-06-23 11:59:29 [main] INFO  o.h.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-06-23 11:59:30 [main] INFO  c.alibaba.druid.pool.DruidDataSource  - {dataSource-1} inited
+2017-06-23 11:59:30 [main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-06-23 11:59:31 [main] INFO  o.h.tool.hbm2ddl.SchemaUpdate  - HHH000228: Running hbm2ddl schema update
+2017-06-23 11:59:31 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean  - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-06-23 11:59:32 [main] INFO  o.h.h.i.QueryTranslatorFactoryInitiator  - HHH000397: Using ASTQueryTranslatorFactory
+2017-06-23 11:59:33 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter  - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@177bea38: startup date [Fri Jun 23 11:59:25 CST 2017]; root of context hierarchy
+2017-06-23 11:59:33 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  - Mapped "{[/customers],methods=[GET]}" onto public java.lang.String com.firstTaste.crm.controller.CustomerHttpController.pageView()
+2017-06-23 11:59:33 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  - Mapped "{[/index],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.firstTaste.crm.controller.IndexController.createCustomerInfo()
+2017-06-23 11:59:33 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  - Mapped "{[/orderinfos],methods=[GET]}" onto public java.lang.String com.firstTaste.crm.controller.OrderInfoHttpController.pageView()
+2017-06-23 11:59:33 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  - Mapped "{[/orderinfos/findByConditions],methods=[GET]}" onto public void com.firstTaste.crm.controller.OrderInfoHttpController.findByConditions(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpServletResponse)
+2017-06-23 11:59:33 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  - Mapped "{[/v1/customers],methods=[GET]}" onto public java.util.List<com.firstTaste.crm.entity.CustomerInfoEntity> com.firstTaste.crm.controller.restful.CustomerInfoController.findCustomerInfos()
+2017-06-23 11:59:33 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  - Mapped "{[/v1/customers/getOne/{customerId}],methods=[GET]}" onto public com.firstTaste.crm.entity.CustomerInfoEntity com.firstTaste.crm.controller.restful.CustomerInfoController.findCustomerInfo(java.lang.String)
+2017-06-23 11:59:33 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  - Mapped "{[/v1/customers/conditions],methods=[GET]}" onto public java.util.List<com.firstTaste.crm.entity.CustomerInfoEntity> com.firstTaste.crm.controller.restful.CustomerInfoController.findCustomerInfo(java.lang.String,java.lang.String,java.lang.String)
+2017-06-23 11:59:33 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  - Mapped "{[/v1/customers],methods=[POST]}" onto public com.firstTaste.crm.entity.CustomerInfoEntity com.firstTaste.crm.controller.restful.CustomerInfoController.createCustomerInfo(com.firstTaste.crm.entity.CustomerInfoEntity)
+2017-06-23 11:59:33 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  - Mapped "{[/v1/orderinfos/{customerId}],methods=[GET]}" onto public java.util.List<com.firstTaste.crm.entity.OrderInfoEntity> com.firstTaste.crm.controller.restful.OrderInfoController.findByCustomerId(java.lang.String)
+2017-06-23 11:59:33 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  - Mapped "{[/v1/orderinfos],methods=[POST]}" onto public com.firstTaste.crm.entity.OrderInfoEntity com.firstTaste.crm.controller.restful.OrderInfoController.createCustomerInfo(com.firstTaste.crm.entity.OrderInfoEntity)
+2017-06-23 11:59:33 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  - Mapped "{[/v1/workinfos/findByDeliveryTime/{deliveryTime}],methods=[GET]}" onto public java.util.List<com.firstTaste.crm.entity.WorkInfoEntity> com.firstTaste.crm.controller.restful.WorkInfoController.findByDeliveryTime(java.lang.String) throws java.text.ParseException
+2017-06-23 11:59:33 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  - Mapped "{[/v1/workinfos/getone/{workInfoId}],methods=[GET]}" onto public com.firstTaste.crm.entity.WorkInfoEntity com.firstTaste.crm.controller.restful.WorkInfoController.findById(java.lang.String)
+2017-06-23 11:59:33 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  - Mapped "{[/v1/workinfos/done/{workInfoId}],methods=[POST]}" onto public com.firstTaste.crm.entity.WorkInfoEntity com.firstTaste.crm.controller.restful.WorkInfoController.doneWorkInfo(java.lang.String)
+2017-06-23 11:59:33 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  - Mapped "{[/v1/workinfos/{orderInfoId}],methods=[POST]}" onto public com.firstTaste.crm.entity.WorkInfoEntity com.firstTaste.crm.controller.restful.WorkInfoController.createByOrderInfo(java.lang.String)
+2017-06-23 11:59:33 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  - Mapped "{[/v1/workinfos/{orderInfoId}],methods=[GET]}" onto public java.util.List<com.firstTaste.crm.entity.WorkInfoEntity> com.firstTaste.crm.controller.restful.WorkInfoController.findByOrderId(java.lang.String)
+2017-06-23 11:59:33 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-06-23 11:59:33 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping  - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-06-23 11:59:33 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping  - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-06-23 11:59:33 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping  - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-06-23 11:59:33 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping  - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-06-23 11:59:34 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter  - Registering beans for JMX exposure on startup
+2017-06-23 11:59:34 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter  - Bean with name 'dataSource' has been autodetected for JMX exposure
+2017-06-23 11:59:34 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter  - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2017-06-23 11:59:34 [main] INFO  o.a.coyote.http11.Http11NioProtocol  - Initializing ProtocolHandler ["http-nio-8080"]
+2017-06-23 11:59:34 [main] INFO  o.a.coyote.http11.Http11NioProtocol  - Starting ProtocolHandler [http-nio-8080]
+2017-06-23 11:59:34 [main] INFO  o.a.tomcat.util.net.NioSelectorPool  - Using a shared selector for servlet write/read
+2017-06-23 11:59:34 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer  - Tomcat started on port(s): 8080 (http)
+2017-06-23 11:59:34 [main] INFO  com.firstTaste.crm.ServerStarter  - Started ServerStarter in 9.445 seconds (JVM running for 10.424)
