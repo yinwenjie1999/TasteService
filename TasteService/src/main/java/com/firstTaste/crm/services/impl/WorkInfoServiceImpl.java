@@ -198,13 +198,20 @@ public class WorkInfoServiceImpl implements WorkInfoService {
   @Override
   public void sendMsg(String workInfoId, String mobile) throws IllegalArgumentException {
     /*
-     * 发送工单的配送短信，需要如下信息 配送单信息和发送短信的目标电话，处理过程为： 1、首先判断工单是否存在，判断电话是否存在 如果没有传入电话，则需要从工单上重新找到电话
-     * 2、从工单中找到已填写的配送单信息，如果没有填写，则抛出异常 3、调用第三方短信发送接口，发送信息 4、更新数据库中的信息，主要是“是否已发送配送单的信息”
+     * 发送工单的配送短信，需要如下信息 配送单信息和发送短信的目标电话，处理过程为： 
+     * 1、首先判断工单是否存在，判断电话是否存在 如果没有传入电话，则需要从工单上重新找到电话
+     * 2、从工单中找到已填写的配送单信息，如果没有填写，则抛出异常 
+     * 3、调用第三方短信发送接口，发送信息 
+     * 4、更新数据库中的信息，主要是“是否已发送配送单的信息”
      */
     Validate.notEmpty(workInfoId, "工单信息必须传入！");
 
     // 1、==================
     WorkInfoEntity workInfoEntity = this.workInfoRepository.findByWorkinfoId(workInfoId);
+    OrderInfoEntity orderInfo = workInfoEntity.getOrderInfo();
+    int totalCount = orderInfo.getWorkNumber();
+    int count = orderInfo.getWorkExecutedNumber();
+    
     Validate.notNull(workInfoEntity, "没有发现指定的工单信息！");
     String _mobile;
     if (!StringUtils.isEmpty(mobile)) {
@@ -218,7 +225,13 @@ public class WorkInfoServiceImpl implements WorkInfoService {
     Validate.notEmpty(logisticsNo, "要发送配送短信，请首先为工单填写配送信息！");
 
     // 3、==================
-    this.shortMessageService.sendMessage(logisticsNo, _mobile);
+    // 如果条件成立，说明是最后一次配送的短信
+    if(count >= totalCount) {
+      this.shortMessageService.sendMessageAtLast(logisticsNo, _mobile);
+    } else {
+      this.shortMessageService.sendMessage(logisticsNo, _mobile , count , totalCount);
+    }
+    
 
     // 4、=================
     workInfoEntity.setMsgStatus(1);

@@ -127,7 +127,6 @@ function buildWorkInfos(listDatas) {
 			tdhtml += "<a href=\"javascript:void(0);\" onclick=\"preDoneByWorkId('" + dataItem.id + "')\" style=\"margin-right: 10px\">完成</a>";
 			tdhtml += "<a href=\"javascript:void(0);\" onclick=\"preModifyRemarkByWorkId('" + dataItem.id + "','" + dataItem.remark + "')\" style=\"margin-right: 10px\" data-reveal-id=\"myRemarkDiv\">修改备注</a>";
 			tdhtml += "<a href=\"javascript:void(0);\" onclick=\"preModifyLogisticsNoDivByWorkId('" + dataItem.id + "','" + dataItem.logisticsNo + "')\" style=\"margin-right: 10px\" data-reveal-id=\"myLogisticsNoDivs\">录入运单</a>";
-			tdhtml += "<a href=\"javascript:void(0);\" onclick=\"sendMsgByWorkId('" + dataItem.id + "')\" style=\"margin-right: 10px\">发送短信</a>";
 		} else {
 			tdhtml += "<a href=\"javascript:void(0);\" onclick=\"preModifyRemarkByWorkId('" + dataItem.id + "','" + dataItem.remark + "')\" style=\"margin-right: 10px\" data-reveal-id=\"myRemarkDiv\">修改备注</a>";
 			tdhtml += "<a href=\"javascript:void(0);\" onclick=\"preModifyLogisticsNoDivByWorkId('" + dataItem.id + "','" + dataItem.logisticsNo + "')\" style=\"margin-right: 10px\" data-reveal-id=\"myLogisticsNoDivs\">录入运单</a>";
